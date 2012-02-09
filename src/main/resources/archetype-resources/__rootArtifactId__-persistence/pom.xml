@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>${rootArtifactId}</artifactId>
+		<groupId>${groupId}</groupId>
+		<version>${version}</version>
+		<relativePath>..</relativePath>
+	</parent>
+	
+	<groupId>${groupId}.${rootArtifactId}</groupId>
+	<artifactId>${rootArtifactId}-${artifactId}</artifactId>
+	<packaging>pom</packaging>
+	<description>Contiene dos submodulos:
+Model: contiene las clases del modelo de datos.
+DAO: contiene las interfaces e implementaciones JPA 2.0 (Hibernate) de los DAO que manejan el modelo.</description>
+
+	<dependencies>
+		<!-- Dependencias internas -->
+		<dependency>
+			<groupId>${groupId}.${rootArtifactId}</groupId>
+			<artifactId>${rootArtifactId}-commons</artifactId>
+		</dependency>
+	</dependencies>
+</project>

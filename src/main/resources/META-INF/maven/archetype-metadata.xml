@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="PipeConsole"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet encoding="UTF-8">
+      <directory>.settings</directory>
+      <includes>
+        <include>**/*.prefs</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.project</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <modules>
+    <module id="commons" dir="__rootArtifactId__-commons" name="__rootArtifactId__-commons">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="persistence" dir="__rootArtifactId__-persistence" name="__rootArtifactId__-persistence">
+      <fileSets>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+      <modules>
+        <module id="persistence-model" dir="__rootArtifactId__-persistence-model" name="__rootArtifactId__-persistence-model">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.xml</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.xml</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="persistence-repositories" dir="__rootArtifactId__-persistence-repositories" name="__rootArtifactId__-persistence-repositories">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.xml</include>
+                <include>**/*.properties</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+      </modules>
+    </module>
+    <module id="business" dir="__rootArtifactId__-business" name="__rootArtifactId__-business">
+      <fileSets>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+      <modules>
+        <module id="business-interfaces" dir="__rootArtifactId__-business-interfaces" name="__rootArtifactId__-business-interfaces">
+          <fileSets>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="business-impl" dir="__rootArtifactId__-business-impl" name="__rootArtifactId__-business-impl">
+          <fileSets>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.xml</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+      </modules>
+    </module>
+    <module id="webapp" dir="__rootArtifactId__-webapp" name="__rootArtifactId__-webapp">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/webapp</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+            <include>**/*.component</include>
+            <include>**/*.container</include>
+            <include>**/*.name</include>
+            <include>**/*.jsdtscope</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>

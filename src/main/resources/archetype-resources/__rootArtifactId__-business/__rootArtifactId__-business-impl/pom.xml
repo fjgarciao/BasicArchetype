@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>${rootArtifactId}-business</artifactId>
+		<version>${version}</version>
+		<groupId>${groupId}.${rootArtifactId}</groupId>
+		<relativePath>..</relativePath>
+	</parent>
+	
+	<artifactId>${rootArtifactId}-${artifactId}</artifactId>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
+
+
+		<!-- Dependencias internas -->
+		<dependency>
+			<groupId>${groupId}.${rootArtifactId}</groupId>
+			<artifactId>${rootArtifactId}-business-interfaces</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${groupId}.${rootArtifactId}</groupId>
+			<artifactId>${rootArtifactId}-persistence-repositories</artifactId>
+		</dependency>
+	</dependencies>
+</project>
